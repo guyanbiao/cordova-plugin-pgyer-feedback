@@ -1,49 +1,23 @@
-# Cordova Hello World Plugin
+Cordova 蒲公英用户反馈插件
+======
+[http://www.pgyer.com/doc/view/sdk_android_guide](http://www.pgyer.com/doc/view/sdk_android_guide)  
 
-Simple plugin that returns your string prefixed with hello.
 
-Greeting a user with "Hello, world" is something that could be done in JavaScript. This plugin provides a simple example demonstrating how Cordova plugins work.
+## 支持的系统
 
-## Using
-Clone the plugin
+* Android
 
-    $ git clone https://github.com/don/cordova-plugin-hello.git
+## 安装
 
-Create a new Cordova Project
+    cordova plugin add https://github.com/guyanbiao/cordova-plugin-pgyer-feedback.git --variable ANDROID_APP_ID=[Android App ID]
 
-    $ cordova create hello com.example.helloapp Hello
-    
-Install the plugin
-
-    $ cd hello
-    $ cordova plugin add ../cordova-plugin-hello
-    
-
-Edit `www/js/index.js` and add the following code inside `onDeviceReady`
+## 使用
+javascript
 
 ```js
-    var success = function(message) {
-        alert(message);
-    }
-
-    var failure = function() {
-        alert("Error calling Hello Plugin");
-    }
-
-    hello.greet("World", success, failure);
+pgyer.popup()
 ```
 
-Install iOS or Android platform
+## License
 
-    cordova platform add ios
-    cordova platform add android
-    
-Run the code
-
-    cordova run 
-
-## More Info
-
-For more information on setting up Cordova see [the documentation](http://cordova.apache.org/docs/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
-
-For more info on plugins see the [Plugin Development Guide](http://cordova.apache.org/docs/en/4.0.0/guide_hybrid_plugins_index.md.html#Plugin%20Development%20Guide)
+Apache License 2.0

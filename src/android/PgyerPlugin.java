@@ -38,7 +38,7 @@ public class PgyerPlugin extends CordovaPlugin {
 
       if (action.equals("popup")) {
         PgyFeedback.getInstance().show(this.cordova.getActivity(), appId);
-        callbackContext.success("hello");
+        callbackContext.success("");
         return true;
       } else {
         return false;
