@@ -12,7 +12,7 @@
   <asset src="www/pgyer.js" target="js/pgyer.js"/>
 
   <js-module src="www/pgyer.js" name="pgyer">
-    <clobbers target="pgyer" />
+    <clobbers target="pgyerFeedback" />
   </js-module>
 
   <platform name="android">
